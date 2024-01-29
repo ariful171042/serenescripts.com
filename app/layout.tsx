@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Noto_Sans } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-const notoSans = Noto_Sans({ subsets: ["latin"] });
+const notoSans = Nunito_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Blog Website",
@@ -18,9 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={notoSans.className}>
+      <body className={`${notoSans.className} flex h-screen flex-col`}>
         <Header />
-        {children}
+        <main className="flex-1 bg-white">{children}</main>
         <Footer />
       </body>
     </html>
