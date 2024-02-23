@@ -13,13 +13,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className={`flex flex-col md:grid grid-cols-8 w-full mt-10`}>
-      <div className="col-span-2 bg-green-500">
-        <LeftSide />
+    <main className={`mt-[7rem] flex flex-col md:grid grid-cols-8 w-full`}>
+      <div className="col-span-2 hidden md:block">
+        <div className="fixed  h-full top-0  left-0  md:w-[200px] lg:w-[250px] xl:w-[300px] 2xl:w-[400px] ">
+          <LeftSide />
+        </div>
       </div>
-      <div className="col-span-4">{children}</div>
-      <div className="col-span-2 bg-rose-500">
-        <RightSide />
+      <div className="col-span-4 ">{children}</div>
+      <div className="col-span-2 hidden md:block">
+        <div className="fixed  h-full top-0  right-0 md:w-[200px] lg:w-[250px] xl:w-[300px] 2xl:w-[400px] ">
+          <RightSide />
+        </div>
       </div>
     </main>
   );

@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 .wrapper {
-  @apply container mx-0 px-5 lg:px-0;
+  @apply container mx-auto px-5 xl:px-0;
+}
+
+.sp {
+  @apply h-[100vh-4rem] mt-[6rem];
 }

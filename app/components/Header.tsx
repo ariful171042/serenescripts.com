@@ -34,7 +34,7 @@ const navitems = [
 const Header = () => {
   const pathname = usePathname();
   return (
-    <header className="h-16 w-full flex justify-center border-b shadow-xl">
+    <header className="h-16 fixed top-0 left-0 right-0 z-50 bg-white py-10 w-full flex justify-center border-b shadow-xl">
       <nav className="wrapper h-full flex justify-between items-center">
         <div className="logo">
           <Link href={"/"} className="text-xl font-bold">
@@ -57,6 +57,11 @@ const Header = () => {
             href={"/sign-in"}
             className="bg-blue-500 px-5 py-2 rounded-lg text-white font-semibold tracking-wider">
             Sign In
+          </Link>
+          <Link
+            href={"/profile"}
+            className="bg-blue-500 px-5 py-2 rounded-lg text-white font-semibold tracking-wider">
+            Profile
           </Link>
         </ul>
       </nav>
