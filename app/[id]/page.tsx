@@ -15,6 +15,8 @@ const BlogDetailsPage = ({ params }: { params: { id: string } }) => {
             repellat est pariatur et odio at ipsum dolorem, animi voluptate
             cupiditate tempore qui?
           </p>
+          <h2>Author Md Ariful Islam</h2>
+          <p>Publist today</p>
         </div>
       </div>
     </div>
