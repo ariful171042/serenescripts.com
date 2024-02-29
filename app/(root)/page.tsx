@@ -59,6 +59,46 @@ const data = [
   },
 ];
 
+const  blogs = [
+  {
+    "title": "Exploring the Wonders of Machu Picchu",
+    "description": "Embark on a journey through the ancient ruins of Machu Picchu, nestled high in the Andes mountains of Peru. Discover the history, architecture, and mystique of this UNESCO World Heritage site.",
+    "createdAt": "2024-02-29T08:00:00Z",
+    "updatedAt": "2024-02-29T10:30:00Z",
+    "publishedDate": "2024-03-15",
+    "author": {
+      "name": "Alexandra Carter",
+      "description": "An avid traveler and historian with a passion for uncovering the world's hidden gems.",
+      "authorImage": "https://example.com/author-image.jpg"
+    }
+  },
+  {
+    "title": "The Art of Bonsai: Cultivating Tranquility in Tiny Trees",
+    "description": "Delve into the ancient Japanese art of bonsai cultivation, where miniature trees are meticulously shaped and nurtured to embody nature's beauty and tranquility.",
+    "createdAt": "2024-02-15T10:00:00Z",
+    "updatedAt": "2024-02-18T14:20:00Z",
+    "publishedDate": "2024-03-01",
+    "author": {
+      "name": "Hiroshi Tanaka",
+      "description": "A bonsai master with decades of experience in the art of cultivating miniature trees.",
+      "authorImage": "https://example.com/author-image-hiroshi.jpg"
+    }
+  },
+  {
+    "title": "The Science of Sleep: Unlocking the Secrets of a Restful Night",
+    "description": "Dive into the fascinating world of sleep science, exploring the mechanisms behind restorative sleep and practical tips for improving sleep quality.",
+    "createdAt": "2024-01-20T12:00:00Z",
+    "updatedAt": "2024-01-22T15:45:00Z",
+    "publishedDate": "2024-02-05",
+    "author": {
+      "name": "Dr. Sarah Johnson, PhD",
+      "description": "A sleep researcher and neuroscientist dedicated to unraveling the mysteries of the sleeping brain.",
+      "authorImage": "https://example.com/author-image-sarah.jpg"
+    }
+  }
+]
+
+
 const HomePage = () => {
   return (
     <main>
