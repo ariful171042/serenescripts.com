@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Overlay from "../components/global/Overlay";
 
 const blogs = {
   title: "Exploring the Wonders of Machu Picchu",
@@ -119,13 +120,14 @@ const BlogDetailsPage = ({ params }: { params: { id: string } }) => {
             alt="image"
             className="w-full h-full object-cover"
           />
-          <div className="absolute bottom-5 left-10">
-            <h5 className="text-xl ">Newest Blog 4min</h5>
-            <h2 className="text-3xl font-semibold">
+          <Overlay />
+          <div className="absolute bottom-5 left-10 z-50">
+            <h5 className="text-xl text-white/80">Newest Blog 4min</h5>
+            <h2 className="text-3xl font-semibold text-white">
               The Art of Home Transformation
             </h2>
           </div>
-          <div className="absolute bottom-5 right-20 flex gap-5">
+          <div className="absolute bottom-5 right-20 flex gap-5 z-10">
             <div className="w-[60px] h-[60px] overflow-hidden rounded-xl border-2">
               <Image
                 src={
@@ -138,8 +140,10 @@ const BlogDetailsPage = ({ params }: { params: { id: string } }) => {
               />
             </div>
             <div className="">
-              <h5 className="text-xl">Written By</h5>
-              <h3 className="text-2xl font-semibold">MD Ariful Islam</h3>
+              <h5 className="text-xl text-white/80">Written By</h5>
+              <h3 className="text-2xl font-semibold text-gray-300">
+                MD Ariful Islam
+              </h3>
             </div>
           </div>
         </div>
