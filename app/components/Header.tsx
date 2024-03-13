@@ -16,8 +16,8 @@ const navitems = [
   },
   {
     id: 3,
-    name: "Pricing",
-    path: "/pricing",
+    name: "Create Post",
+    path: "/createPost",
   },
   {
     id: 4,
